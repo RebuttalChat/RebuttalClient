@@ -14,7 +14,7 @@
     "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
-    "electron": "^36.3.2",
+    "electron": "^36.8.1",
     "node-sass": "^9.0.0",
     "postcss-loader": "^8.1.1",
     "sass-loader": "^16.0.5",
