@@ -32,5 +32,21 @@
     "build": "./node_modules/.bin/tsc",
     "build-webapp": "cd webapp && yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.rebuttalchat.client",
+    "productName": "RebuttalClient",
+    "files": [
+      "dist/**/*",
+      "package.json",
+      "webapp"
+    ],
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility"
+    }
   }
 }
