@@ -44,7 +44,7 @@
     "files": [
       "dist/**/*",
       "package.json",
-      "webapp"
+      "webapp/dist/**/*"
     ],
     "linux": {
       "target": [
