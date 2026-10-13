@@ -1,5 +1,8 @@
 {
   "name": "rebuttal-client",
+  "version": "0.0.1",
+  "description": "Desktop webapp for Rebuttal",
+  "author": "trigg",
   "type": "module",
   "main": "./dist/main.js",
   "devDependencies": {
