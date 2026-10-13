@@ -31,7 +31,7 @@
     "start-insecure": "electron ./dist/main.js --enable-features=UseOzonePlatform,WaylandWindowDecor --ozone-platform=wayland --ignore-certificate-errors",
     "build": "./node_modules/.bin/tsc",
     "build-webapp": "cd webapp && yarn run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "electron-builder --linux"
   },
   "build": {
