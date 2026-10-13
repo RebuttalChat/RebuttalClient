@@ -39,12 +39,16 @@
     "dist": "electron-builder --linux"
   },
   "build": {
-    "appId": "com.rebuttalchat.client",
+    "appId": "com.github.rebuttalchat.client",
     "productName": "RebuttalClient",
     "files": [
       "dist/**/*",
       "package.json",
-      "webapp/dist/**/*"
+      {
+        "from": "webapp/dist",
+        "to": "webapp/dist",
+        "filter": ["**/*"]
+      }
     ],
     "linux": {
       "target": [
