@@ -6,7 +6,7 @@
   "type": "module",
   "main": "./dist/main.js",
   "devDependencies": {
-    "@babel/core": "^7.27.4",
+    "@babel/core": "^7.29.6",
     "@babel/preset-env": "^7.27.2",
     "@types/cacheable-request": "^8.3.6",
     "@types/electron": "^1.6.12",
@@ -18,7 +18,7 @@
     "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
-    "electron": "^39.8.5",
+    "electron": "^41.10.6",
     "electron-builder": "^26.15.3",
     "postcss-loader": "^8.1.1",
     "sass": "^1.105.1",
