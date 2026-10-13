@@ -12,6 +12,7 @@
     "@types/electron": "^1.6.12",
     "@types/http-cache-semantics": "^4.0.4",
     "@types/ms": "^2.1.0",
+    "@types/node": "^26.6.5",
     "@types/responselike": "^1.0.3",
     "@types/showdown": "^2.0.6",
     "autoprefixer": "^10.4.21",
@@ -31,12 +32,12 @@
     "showdown": "^2.1.0"
   },
   "scripts": {
-    "start": "electron ./dist/main.js --enable-features=UseOzonePlatform,WaylandWindowDecor --ozone-platform=wayland",
-    "start-insecure": "electron ./dist/main.js --enable-features=UseOzonePlatform,WaylandWindowDecor --ozone-platform=wayland --ignore-certificate-errors",
+    "start": "./dist/RebuttalClient-0.0.1.AppImage",
+    "start-insecure": "./dist/RebuttalClient-0.0.1.AppImage --ignore-certificate-errors",
     "build": "./node_modules/.bin/tsc",
     "build-webapp": "cd webapp && yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "electron-builder --linux"
+    "build-appimg": "electron-builder --linux"
   },
   "build": {
     "appId": "com.github.rebuttalchat.client",
@@ -47,7 +48,9 @@
       {
         "from": "webapp/dist",
         "to": "webapp/dist",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       }
     ],
     "linux": {

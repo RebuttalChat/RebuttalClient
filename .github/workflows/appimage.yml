@@ -34,7 +34,7 @@ jobs:
           yarn run build-webapp
 
       - name: Package
-        run: yarn run dist
+        run: yarn run build-appimg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

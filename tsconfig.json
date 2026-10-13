@@ -2,18 +2,19 @@
     "compilerOptions": {
       "allowJs": true,
       "checkJs": false,
-      "target": "es5",
-      "module": "es2015",
+      "target": "es2022",
+      "module": "NodeNext",
       "strict": true,
       "noImplicitAny": true,
-      "moduleResolution": "node",
+      "moduleResolution": "NodeNext",
       "sourceMap": false,
-      "outDir": "dist",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "skipLibCheck": true,
       "esModuleInterop": true,
-      "baseUrl": ".",
       "paths": {
         "*": [
-          "node_modules/*"
+          "./node_modules/*"
         ]
       },
     },

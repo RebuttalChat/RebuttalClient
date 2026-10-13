@@ -1,7 +1,10 @@
 import { app, BrowserWindow } from "electron";
 import path from "path";
 import keytar from 'keytar';
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 var window: any;
 
 // Create the actual window
@@ -24,7 +27,8 @@ function createInstance() {
   if (window == null) {
     createWindow();
   }
-  window.loadFile('../webapp/dist/index.html');
+  const indexPath = path.join(__dirname, '..', 'webapp', 'dist', 'index.html');
+  window.loadFile(indexPath);
   console.log("Linked page");
   window.once('ready-to-show', () => {
     console.log("Showing...");
